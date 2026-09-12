@@ -15,6 +15,7 @@ import { DocumentsModule } from './modules/documents/documents.module';
 import { FoldersModule } from './modules/folders/folders.module';
 import { RefirmaModule } from './modules/refirma/refirma.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { ClientsModule } from './modules/clients/clients.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     FoldersModule, // Carpetas anidadas para organizar documentos
     RefirmaModule, // Integración con ReFirma (RENIEC)
     DashboardModule, // Métricas del panel
+    ClientsModule, // CRUD de clientes
   ],
 })
 export class AppModule {}
